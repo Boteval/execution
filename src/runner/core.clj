@@ -2,6 +2,8 @@
   (:require [clojure.java.shell :as shell])
   (:require [clojure.string :as str]))
 
+(load "run")
+
 (defn startup []
   ; http://stackoverflow.com/a/29528037/1509695
   ; http://stackoverflow.com/questions/38934681/how-to-get-timestamp-neutral-git-hash-from-a-given-commit-hash
@@ -13,4 +15,5 @@
 
 (defn -main []
   (startup)
+  (run 3 4)
 )
